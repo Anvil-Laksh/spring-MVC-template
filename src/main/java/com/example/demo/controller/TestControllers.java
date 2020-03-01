@@ -24,5 +24,12 @@ public class TestControllers {
     @PostMapping("/submit")
     public void addCustomer(@RequestBody Customer customer){
         testService.addCustomerService(customer);
+        log.info("add query success");
+    }
+
+    @RequestParam(value = "id")
+    public void delCustomer(Customer customer){
+        testService.delCustomerService(customer);
+        log.info("customer del success");
     }
 }

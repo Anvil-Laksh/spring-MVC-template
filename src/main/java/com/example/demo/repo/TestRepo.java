@@ -22,4 +22,7 @@ public class TestRepo {
             customers.add(customer);
         }
 
+        public void delCustomer(Customer customer){
+            customers.remove(customer);
+        }
 }

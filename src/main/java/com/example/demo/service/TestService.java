@@ -21,6 +21,12 @@ public class TestService {
     public void addCustomerService(Customer customer){
         testRepo.addCustomer(customer);
     }
+
+    public void delCustomerService(Customer customer){
+        testRepo.delCustomer(customer);
+    }
+
+
 }
 
 
