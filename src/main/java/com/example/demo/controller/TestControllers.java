@@ -12,13 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Controller
+@RestController("/edu")
 @Slf4j
-@RequestMapping("/index")
-public class TestControllers<Sl4j> {
+public class TestControllers {
     @Autowired
     private TestService testService;
-    @GetMapping("/index")
+    @GetMapping("/get")
     public Customer getControl(){
         log.info("Inside Controller");
         return testService.getHelloworld();
